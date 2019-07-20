@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <title>Computer Graphics: Assignment 12</title>
+    <!-- Shaders -->
+    <script src="shaders/blinn-phong.vert"></script>
+    <script src="shaders/blinn-phong.frag"></script>
+    <script src="shaders/skybox.vert"></script>
+    <script src="shaders/skybox.frag"></script>
+    <script src="shaders/shadowmap.vert"></script>
+    <script src="shaders/shadowmap.frag"></script>
+    <!-- End Shaders -->
+
+    <!-- 3D models -->
+    <script src=objects/sphere.obj></script>
+    <script src=objects/tree.obj></script>
+    <script src=objects/deer.obj></script>
+    <script src=objects/ship.obj></script>
+    <!-- End 3D models -->
+
+    <!-- Includes -->
+        <script src="libraries/gl-matrix-min.js"></script>
+        <script src="GLArrayBuffer.js"></script>
+        <script src="GLTexture.js"></script>
+        <script src="GLFrameBuffer.js"></script>
+        <script src="GLProgram.js"></script>
+        <script src="GLModels.js"></script>
+        <script src="readobj.js"></script>
+        <script src="RenderingEngine.js"></script>
+        <script src="interpolate.js"></script>
+    <!-- End Includes -->
+    <body>
+        <canvas id="window" width="1280px" height="720px"></canvas>
+        <script src="main.js"></script>
+        <div  style="float: right">
+            <div>
+                <input type="checkbox" id="skybox" checked="true"> Skybox
+            </div>
+            <div>
+                <input type="checkbox" id="texture" checked="true"> Texture
+            </div>
+            <div>
+                <input type="checkbox" id="reflection" checked="true"> Reflection
+            </div>
+
+            <div>
+                <input type="checkbox" id="nmapping" checked="true"> Normal Mapping
+            </div>
+
+            <div>
+                <input type="checkbox" id="shadows" checked="true"> Shadows
+            </div>
+
+            <div>
+                <input type="checkbox" id="ambient" checked="true"> Ambient
+            </div>
+
+            <div>
+                <input type="checkbox" id="specular" checked="true"> Specular
+            </div>
+
+            <div>
+                <input type="checkbox" id="diffuse" checked="true"> Diffuse
+            </div>
+            
+        </div>
+    </body>
+</html>
